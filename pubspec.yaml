@@ -1,0 +1,30 @@
+# SPDX-FileCopyrightText: Copyright Logically Magic Inc. <hello@logicallymagic.com>
+# SPDX-FileCopyrightText: Copyright Hamid Jahanzad <Hamid@Jahanzad.com>
+# SPDX-FileCopyrightText: Copyright Contributors to the Bill8:Merchant
+# SPDX-License-Identifier: Apache-2.0
+
+name: merchant
+description: Bill8:Merchant — merchant dashboard (payments, subscriptions, payouts, webhooks, reports). Flutter (iOS, Android, Web).
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  web: ^1.1.1
+  google_fonts: ^8.1.0
+  sentin8:
+    path: ../../sentin8/sentin8-flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

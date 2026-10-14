@@ -1,0 +1,47 @@
+<!-- SPDX-FileCopyrightText: Copyright Logically Magic Inc. <hello@logicallymagic.com> -->
+<!-- SPDX-FileCopyrightText: Copyright Hamid Jahanzad <Hamid@Jahanzad.com> -->
+<!-- SPDX-FileCopyrightText: Copyright Contributors to the Bill8:Merchant -->
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bill8 — payments and billing platform">
+  <title>Bill8</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+  <!-- CanvasKit from the local dev server (offline-safe; the platform
+       pattern — no external CDN dependency). -->
+  <script>
+    (function () {
+      var cfg = { canvasKitBaseUrl: '/canvaskit/' };
+      var realLoader = null;
+      if (!window._flutter) window._flutter = {};
+      Object.defineProperty(window._flutter, 'loader', {
+        get: function () {
+          if (!realLoader) return undefined;
+          return new Proxy(realLoader, {
+            get: function (target, prop) {
+              if (prop === 'load') {
+                return function (config) {
+                  for (var k in cfg) config[k] = cfg[k];
+                  return target.load(config);
+                };
+              }
+              return target[prop];
+            }
+          });
+        },
+        set: function (val) { realLoader = val; return true; },
+        configurable: true,
+      });
+    })();
+  </script>
+  <script src="flutter.js" defer></script>
+  <script src="flutter_bootstrap.js" defer></script>
+</body>
+</html>
