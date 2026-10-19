@@ -1,4 +1,4 @@
-# Bill8:Merchant — Flutter App
+# Bill8:Merchant - Flutter App
 
 The merchant dashboard: accept payments, manage subscriptions, onboard
 sellers, and run reports.
@@ -31,13 +31,13 @@ graph TD
 
 ## 4. Key Traits and Data Structures
 
-- `Bff8ApiClient` — the shared BFF client (no direct backend calls).
+- `Bff8ApiClient` - the shared BFF client (no direct backend calls).
 - Feature modules per surface (payments, subscriptions, reports,
   connected accounts, webhooks).
 
 ## 5. Rationale, Trade-offs, and Alternatives
 
-- **BFF proxy only** — no app calls a service directly; tokens stay
+- **BFF proxy only** - no app calls a service directly; tokens stay
   server-side.
 
 ## 6. Internal Implementation & Invariants

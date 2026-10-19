@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 name: merchant
-description: Bill8:Merchant — merchant dashboard (payments, subscriptions, payouts, webhooks, reports). Flutter (iOS, Android, Web).
+description: Bill8:Merchant - merchant dashboard (payments, subscriptions, payouts, webhooks, reports). Flutter (iOS, Android, Web).
 publish_to: "none"
 version: 0.1.0
 

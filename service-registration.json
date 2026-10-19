@@ -8,7 +8,7 @@
       "listing": {
         "app_name": "Bill8:Merchant",
         "app_slug": "bill8-merchant",
-        "description": "Bill8 merchant dashboard — accept payments, manage subscriptions, onboard sellers, and run reports.",
+        "description": "Bill8 merchant dashboard - accept payments, manage subscriptions, onboard sellers, and run reports.",
         "backend_url": "http://localhost:3006",
         "supports_dcr": true,
         "visibility": "public",
