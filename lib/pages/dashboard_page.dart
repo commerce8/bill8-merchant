@@ -3,11 +3,11 @@
 // SPDX-FileCopyrightText: Copyright Contributors to the Bill8:Merchant
 // SPDX-License-Identifier: Apache-2.0
 
-// Merchant dashboard — the home surface: balances, recent charges, and
+// Merchant dashboard - the home surface: balances, recent charges, and
 // the navigation rail into payments/billing/payouts surfaces.
 //
 // All data flows through BffApiClient → Sentin8:BFF
-// /proxy/ledger/..., /proxy/payments/... (the platform BFF pattern —
+// /proxy/ledger/..., /proxy/payments/... (the platform BFF pattern  - 
 // tokens never reach the client; DESIGN.md of this app §2).
 
 import 'package:flutter/material.dart';
@@ -23,7 +23,7 @@ class DashboardPage extends StatefulWidget {
 
 class _DashboardPageState extends State<DashboardPage> {
   // The runtime context resolves from the app origin (TLS-injected
-  // headers) — the BFF domain follows the platform hostname
+  // headers) - the BFF domain follows the platform hostname
   // derivation.
   late final Future<AppRuntimeContext> _context;
 
@@ -90,7 +90,7 @@ class _DashboardPageState extends State<DashboardPage> {
                       'Accept a payment from the Payments surface, run an '
                       'invoice cycle from Billing, or check payouts in the '
                       'Ledger. Everything routes through the platform proxy '
-                      'with your session — no keys in the browser.',
+                      'with your session - no keys in the browser.',
                       style: Sentin8Text.bodyMedium,
                     ),
                   ],
